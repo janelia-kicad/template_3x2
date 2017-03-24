@@ -1,4 +1,4 @@
-#template_3x2
+# template_3x2
 
 Authors:
 
