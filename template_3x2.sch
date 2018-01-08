@@ -1,35 +1,4 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:template_3x2
-LIBS:components
+EESchema Schematic File Version 4
 EELAYER 26 0
 EELAYER END
 $Descr A 11000 8500
@@ -45,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MODULAR_DEVICE_BASE_3X2_MALE MDB1
+L template_3x2:MODULAR_DEVICE_BASE_3X2_MALE MDB1
 U 1 1 589B6745
 P 2650 1550
 F 0 "MDB1" H 2650 2547 60  0000 C CNN
@@ -60,7 +29,7 @@ F 7 "2" H 1900 1250 60  0001 C CNN "PartCount"
 	1    0    0    -1  
 $EndComp
 $Comp
-L VDD #PWR?
+L power:VDD #PWR?
 U 1 1 589B67C3
 P 1350 750
 F 0 "#PWR?" H 100 -400 50  0001 C CNN
@@ -71,7 +40,7 @@ F 3 "" H 100 -250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG?
 U 1 1 589B67D9
 P 1100 750
 F 0 "#FLG?" H -150 -175 50  0001 C CNN
@@ -84,12 +53,12 @@ $EndComp
 Wire Wire Line
 	1100 750  1100 800 
 Wire Wire Line
-	1100 800  1400 800 
+	1100 800  1350 800 
 Wire Wire Line
 	1350 750  1350 800 
 Connection ~ 1350 800 
 $Comp
-L GND #PWR?
+L power:GND #PWR?
 U 1 1 589B67FE
 P 700 950
 F 0 "#PWR?" H -500 -650 50  0001 C CNN
@@ -100,7 +69,7 @@ F 3 "" H -500 -400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG?
 U 1 1 589B6835
 P 700 750
 F 0 "#FLG?" H -550 -175 50  0001 C CNN
@@ -111,7 +80,7 @@ F 3 "" H -550 -250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	700  750  700  950 
+	700  750  700  900 
 Wire Wire Line
 	700  900  1400 900 
 Connection ~ 700  900 
@@ -145,7 +114,7 @@ NoConn ~ 3900 2100
 NoConn ~ 3900 2200
 NoConn ~ 3900 2300
 $Comp
-L VEE #PWR?
+L power:VEE #PWR?
 U 1 1 589B69B5
 P 4450 800
 F 0 "#PWR?" H 200 -50 50  0001 C CNN
@@ -156,7 +125,7 @@ F 3 "" H 200 100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L PWR_FLAG #FLG?
+L power:PWR_FLAG #FLG?
 U 1 1 589B69CA
 P 4750 800
 F 0 "#FLG?" H 3500 -125 50  0001 C CNN
@@ -169,8 +138,14 @@ $EndComp
 Wire Wire Line
 	4750 800  4750 900 
 Wire Wire Line
-	4750 900  3900 900 
+	4750 900  4450 900 
 Wire Wire Line
 	4450 800  4450 900 
 Connection ~ 4450 900 
+Wire Wire Line
+	1350 800  1400 800 
+Wire Wire Line
+	700  900  700  950 
+Wire Wire Line
+	4450 900  3900 900 
 $EndSCHEMATC
