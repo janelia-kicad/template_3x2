@@ -3,7 +3,7 @@
   #+MACRO: name template_3x2
   #+MACRO: version 1.0
   #+MACRO: license Open-Source Hardware
-  #+MACRO: url https://github.com/janelia-kicad/template_5x3
+  #+MACRO: url https://github.com/janelia-kicad/template_3x2
   #+AUTHOR: Peter Polidoro
   #+EMAIL: peterpolidoro@gmail.com
 
